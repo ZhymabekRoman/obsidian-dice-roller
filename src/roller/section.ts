@@ -56,8 +56,8 @@ export class SectionRoller extends GenericFileRoller<RollerCache> {
         showDice = plugin.data.showDice
     ) {
         super(plugin, original, lexeme, source, showDice);
-        this.containerEl.addClasses(["has-embed", "markdown-embed"]);
-        this.resultEl.addClass("internal-embed");
+        // this.containerEl.addClasses(["has-embed", "markdown-embed"]);
+        // this.resultEl.addClass("internal-embed");
         this.resultEl.setAttrs({ src: source });
         this.copy = this.containerEl.createDiv({
             cls: "dice-content-copy dice-roller-button no-show",
